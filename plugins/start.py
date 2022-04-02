@@ -12,10 +12,10 @@ async def start(client,message):
 	**Document Or Video** and enter new filenameto rename it__
 	""",reply_to_message_id = message.message_id ,  
 	reply_markup=InlineKeyboardMarkup([[
-          InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/Mo_Tech_Group"), 
-	  InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/MoTech_YT")
+          InlineKeyboardButton("🔗 Support" ,url="https://t.me/dlsupport2022"), 
+	  InlineKeyboardButton("Subscribe 🔔", url="https://t.me/dltechnical")
           ],[
-          InlineKeyboardButton("🧩 Deploy 🧩", url="https://youtu.be/7ALYUk-rYMc")
+          InlineKeyboardButton("🧑‍💻 Developer", url="https://t.me/helloalluarjun")
           ]]
           )
         )
@@ -33,4 +33,4 @@ async def send_doc(client,message):
        f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}"""
        ,reply_to_message_id = message.message_id,
        reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 Rename ",callback_data = "rename")
-       ,InlineKeyboardButton("Cancel✖️",callback_data = "cancel")  ]]))
+       ,InlineKeyboardButton("❌ Cancel ❌",callback_data = "cancel")  ]]))

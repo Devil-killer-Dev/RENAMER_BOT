@@ -7,9 +7,9 @@ from helper.database import  insert
 async def start(client,message):
 	insert(int(message.chat.id))
 	await message.reply_text(text =f"""
-	Hello {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filenameto rename it__
+	Hello👋 {message.from_user.first_name }
+	__I Am File Renamer Bot, Please Sent Any Telegram 
+	**File Or Video** And Enter Rename Botton And Rename It__
 	""",reply_to_message_id = message.message_id ,  
 	reply_markup=InlineKeyboardMarkup([[
           InlineKeyboardButton("🔗 Support" ,url="https://t.me/dlsupport2022"), 

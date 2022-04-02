@@ -19,7 +19,7 @@ async def refunc(client,message):
         		await message.reply_to_message.delete()
         		if mime == "video":
         			markup = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("📁 File",callback_data = "doc"), 
+        			InlineKeyboardButton("📁 File",callback_data = "fil"), 
         			InlineKeyboardButton("🎥 Video",callback_data = "vid") ]])
         		elif mime == "audio":
         			markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📁 File",callback_data = "fil")
